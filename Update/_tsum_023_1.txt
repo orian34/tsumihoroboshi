@@ -935,7 +935,7 @@
 		   NULL, "— ... Non, il a raison.", Line_Continue);
 	Wait( 1400 );
 	OutputLine(NULL, "…そっちは冥界の仕業なんだ？",
-		   NULL, " “Le monde des morts", hein ?", Line_WaitForInput);
+		   NULL, " “Le monde des morts”, hein ?", Line_WaitForInput);
 	PlaySE( 0, "s_page", 56, 64 );
 	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700289", 256, TRUE);
 	OutputLine(NULL, "　俺のは地底人の仕業って書いてあるよ…。」",
