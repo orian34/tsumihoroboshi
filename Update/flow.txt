@@ -182,6 +182,15 @@ void ViewTips()
 	CallSection("ViewTipsDisplay");
 }
 
+void UpdateHighestChapter()
+{
+	int chapter;
+	chapter = LoadValueFromLocalWork(ChapterNumber);
+
+	if(GetGlobalFlag(GHighestChapter) < chapter)
+		SetGlobalFlag(GHighestChapter, chapter);
+}
+
 void Game()
 {
 	FadeOutBGM( 0, 1000, FALSE );
@@ -212,7 +221,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsStart, 24);
 		StoreValueToLocalWork(NewTipsCount, 1);
 
-		StoreValueToLocalWork( ChapterNumber, 1 );
+		StoreValueToLocalWork( ChapterNumber, 2 );
 		SavePoint("Ch.1 終わり", "Fin du chapitre 1");
 
 		CallSection("ViewTips");
@@ -223,6 +232,8 @@ void Game()
 	{
 		CallScript( "_tsum_002_1" );
 		CallScript( "_tsum_002_2" );
+		StoreValueToLocalWork( ChapterNumber, 3 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 3)
 	{
@@ -236,7 +247,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsStart, 25);
 		StoreValueToLocalWork(NewTipsCount, 1);
 
-		StoreValueToLocalWork( ChapterNumber, 2 );
+		StoreValueToLocalWork( ChapterNumber, 4 );
 		SavePoint("Ch.2 終わり", "Fin du chapitre 2");
 
 		CallSection("ViewTips");
@@ -247,6 +258,8 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 4)
 	{
 		CallScript( "_tsum_004" );
+		StoreValueToLocalWork( ChapterNumber, 5 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 5)
 	{
@@ -257,7 +270,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsStart, 26);
 		StoreValueToLocalWork(NewTipsCount, 2);
 
-		StoreValueToLocalWork( ChapterNumber, 3 );
+		StoreValueToLocalWork( ChapterNumber, 6 );
 		SavePoint("Ch.3 終わり", "Fin du chapitre 3");
 
 		CallSection("ViewTips");
@@ -268,6 +281,8 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 6)
 	{
 		CallScript( "_tsum_006" );
+		StoreValueToLocalWork( ChapterNumber, 7 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 7)
 	{
@@ -278,7 +293,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsStart, 28);
 		StoreValueToLocalWork(NewTipsCount, 1);
 
-		StoreValueToLocalWork( ChapterNumber, 4 );
+		StoreValueToLocalWork( ChapterNumber, 8 );
 		SavePoint("Ch.4 終わり", "Fin du chapitre 4");
 
 		CallSection("ViewTips");
@@ -289,6 +304,8 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 8)
 	{
 		CallScript( "_tsum_008" );
+		StoreValueToLocalWork( ChapterNumber, 9 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 9)
 	{
@@ -299,7 +316,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsStart, 29);
 		StoreValueToLocalWork(NewTipsCount, 1);
 
-		StoreValueToLocalWork( ChapterNumber, 5 );
+		StoreValueToLocalWork( ChapterNumber, 10 );
 		SavePoint("Ch.5 終わり", "Fin du chapitre 5");
 
 		CallSection("ViewTips");
@@ -310,6 +327,8 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 10)
 	{
 		CallScript( "_tsum_010" );
+		StoreValueToLocalWork( ChapterNumber, 11 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 11)
 	{
@@ -320,7 +339,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsStart, 30);
 		StoreValueToLocalWork(NewTipsCount, 1);
 
-		StoreValueToLocalWork( ChapterNumber, 6 );
+		StoreValueToLocalWork( ChapterNumber, 12 );
 		SavePoint("Ch.6 終わり", "Fin du chapitre 6");
 
 		CallSection("ViewTips");
@@ -332,6 +351,8 @@ void Game()
 	{
 		CallScript( "_tsum_012_1" );
 		CallScript( "_tsum_012_2" );
+		StoreValueToLocalWork( ChapterNumber, 13 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 13)
 	{
@@ -342,7 +363,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsStart, 31);
 		StoreValueToLocalWork(NewTipsCount, 1);
 
-		StoreValueToLocalWork( ChapterNumber, 7 );
+		StoreValueToLocalWork( ChapterNumber, 14 );
 		SavePoint("Ch.7 終わり", "Fin du chapitre 7");
 
 		CallSection("ViewTips");
@@ -353,6 +374,8 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 14)
 	{
 		CallScript( "_tsum_014" );
+		StoreValueToLocalWork( ChapterNumber, 15 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 15)
 	{
@@ -364,7 +387,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsStart, 32);
 		StoreValueToLocalWork(NewTipsCount, 1);
 
-		StoreValueToLocalWork( ChapterNumber, 8 );
+		StoreValueToLocalWork( ChapterNumber, 16 );
 		SavePoint("Ch.8 終わり", "Fin du chapitre 8");
 
 		CallSection("ViewTips");
@@ -375,6 +398,8 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 16)
 	{
 		CallScript( "_tsum_016" );
+		StoreValueToLocalWork( ChapterNumber, 17 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 17)
 	{
@@ -385,7 +410,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsStart, 33);
 		StoreValueToLocalWork(NewTipsCount, 1);
 
-		StoreValueToLocalWork( ChapterNumber, 9 );
+		StoreValueToLocalWork( ChapterNumber, 18 );
 		SavePoint("Ch.9 終わり", "Fin du chapitre 9");
 
 		CallSection("ViewTips");
@@ -396,6 +421,8 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 18)
 	{
 		CallScript( "_tsum_018" );
+		StoreValueToLocalWork( ChapterNumber, 19 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 19)
 	{
@@ -406,7 +433,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsStart, 34);
 		StoreValueToLocalWork(NewTipsCount, 1);
 
-		StoreValueToLocalWork( ChapterNumber, 10 );
+		StoreValueToLocalWork( ChapterNumber, 20 );
 		SavePoint("Ch.10 終わり", "Fin du chapitre 10");
 
 		CallSection("ViewTips");
@@ -417,6 +444,8 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 20)
 	{
 		CallScript( "_tsum_020" );
+		StoreValueToLocalWork( ChapterNumber, 21 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 21)
 	{
@@ -427,7 +456,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsStart, 35);
 		StoreValueToLocalWork(NewTipsCount, 1);
 
-		StoreValueToLocalWork( ChapterNumber, 11 );
+		StoreValueToLocalWork( ChapterNumber, 22 );
 		SavePoint("Ch.11 終わり", "Fin du chapitre 11");
 
 		CallSection("ViewTips");
@@ -438,6 +467,8 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 22)
 	{
 		CallScript( "_tsum_022");
+		StoreValueToLocalWork( ChapterNumber, 23 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 23)
 	{
@@ -449,7 +480,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsStart, 36);
 		StoreValueToLocalWork(NewTipsCount, 1);
 
-		StoreValueToLocalWork( ChapterNumber, 12 );
+		StoreValueToLocalWork( ChapterNumber, 24 );
 		SavePoint("Ch.12 終わり", "Fin du chapitre 12");
 
 		CallSection("ViewTips");
@@ -467,10 +498,14 @@ void Game()
 
 		CallScript( "_tsum_024_1a" );
 		CallScript( "_tsum_024_2");
+		StoreValueToLocalWork( ChapterNumber, 25 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 25)
 	{
 		CallScript( "_tsum_025");
+		StoreValueToLocalWork( ChapterNumber, 26 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 26)
 	{
