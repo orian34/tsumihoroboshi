@@ -407,13 +407,13 @@ void main()
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 	DrawSceneWithMask( "background/flashback/Sora", "maskc", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女子</color>", NULL, "<color=#f5e6d3>Girl</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女子</color>", NULL, "<color=#f5e6d3>Fille</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/girla17001", 256, TRUE);
 	OutputLine(NULL, "「ねーー、今日はくさいーーー、窓しめてー。」",
 		   NULL, "— Eh, ça pue aujourd'hui, vous trouvez pas ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>少年</color>", NULL, "<color=#f5e6d3>Young boy</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>少年</color>", NULL, "<color=#f5e6d3>Garçon</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/boya17001", 256, TRUE);
 	OutputLine(NULL, "「ばぁか、窓を閉めたらもっと暑くなるんだよー！！」",
 		   NULL, "— Mais ferme pas les fenêtres, t'es folle ou quoi ? Il fera encore plus chaud !", GetGlobalFlag(GLinemodeSp));
@@ -492,7 +492,7 @@ void main()
 
 	DrawSceneWithMask( "background/flashback/gk1", "maskc", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>少年</color>", NULL, "<color=#f5e6d3>Young boy</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>少年</color>", NULL, "<color=#f5e6d3>Garçon</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/boyb17001", 256, TRUE);
 	OutputLine(NULL, "「あれーーー？！",
 		   NULL, "— Eh, mais ?", Line_WaitForInput);

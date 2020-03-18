@@ -232,7 +232,7 @@
 
 	DrawSceneWithMask( "background/Ma_S1", "maskleft", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の父</color>", NULL, "<color=#f5e6d3>Keiichi's dad</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の父</color>", NULL, "<color=#f5e6d3>Papa de Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/172600001", 256, TRUE);
 	OutputLine(NULL, "「大体、日本の電話料金は高すぎるんだ。",
 		   NULL, "— De toute façon, je te l'ai déjà dit, le problème, c'est que l'abonnement de base est trop cher au Japon.", Line_WaitForInput);
@@ -320,7 +320,7 @@
 		   NULL, " D'ailleurs, je vais sortir, donc pas la peine de préparer de repas de midi pour moi non plus.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の父</color>", NULL, "<color=#f5e6d3>Keiichi's dad</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の父</color>", NULL, "<color=#f5e6d3>Papa de Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/172600003", 256, TRUE);
 	OutputLine(NULL, "「なんだ、友達と一緒か？",
 		   NULL, "— Ah oui ? Tu pars avec des amis ?", Line_WaitForInput);
