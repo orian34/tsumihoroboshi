@@ -1657,11 +1657,11 @@
 		   NULL, "Les cahiers qu'elle t'a refilés, c'était sa dernière création, celle dont elle était le plus fière !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100919", 256, TRUE);
-		   OutputLine(NULL, "　ほら、あの人って人をからかうみたいなところがあるだろ？",
+	OutputLine(NULL, "　ほら、あの人って人をからかうみたいなところがあるだろ？",
 		   NULL, "Elle t'a pas semblée être toujours en train de juger les gens, de se moquer d'eux ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100920", 256, TRUE);
-		   OutputLine(NULL, "　レナが真面目に話を聞いてくれるもんだから、面白がってとんでもない話を吹き込んだだけなんだよ！」",
+	OutputLine(NULL, "　レナが真面目に話を聞いてくれるもんだから、面白がってとんでもない話を吹き込んだだけなんだよ！」",
 		   NULL, "Un jour, tu l'as écoutée et tu es restée sérieuse, alors elle a voulu voir jusqu'où elle pouvait aller !", Line_Normal);
 	ClearMessage();
 

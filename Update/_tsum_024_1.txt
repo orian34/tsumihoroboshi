@@ -971,18 +971,23 @@
 		   NULL, "— ... J'espère sincèrement qu'il ne se passera rien.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot(5, "2choices", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 15, 300, TRUE );
-	char Choice1[2];
+	if (GetGlobalFlag(GChoiceMode) > 0) {
+		if (GetGlobalFlag(GChoiceMode) == 2) {
+			DrawBustshot(5, "2choices_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 15, 300, TRUE );
+		} else {
+			DrawBustshot(5, "2choices", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 15, 300, TRUE );
+		}
+		char Choice1[2];
 
-	if (GetGlobalFlag(GLanguage) == 1) {
-		Choice1[0] = "Tout ira bien.";
-		Choice1[1] = "...Ouais, j'espère.";
-	} else {
-		Choice1[0] = "大丈夫だ";
-		Choice1[1] = "…そうだな";
+		if (GetGlobalFlag(GLanguage) == 1) {
+			Choice1[0] = "Tout ira bien.";
+			Choice1[1] = "...Ouais, j'espère.";
+		} else {
+			Choice1[0] = "大丈夫だ";
+			Choice1[1] = "…そうだな";
+		}
+
+		Select( 2, Choice1 );
+		FadeBustshot( 5, FALSE, 0, 0, 0, 0, 300, TRUE );
 	}
-
-	Select( 2, Choice1 );
-	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 300, TRUE );
-
 }
