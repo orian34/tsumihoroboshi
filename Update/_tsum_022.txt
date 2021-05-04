@@ -1442,6 +1442,8 @@
 		   NULL, "Le visage de Mion se mit à se déformer.", Line_Normal);
 	ClearMessage();
 
+	ModPlayBGM( 0, "higurashi", 56, 0, 1 );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺の目から…大粒の涙が、",
 		   NULL, "Des larmes grosses comme des billes roulaient sur mes joues", Line_ContinueAfterTyping);
@@ -1466,6 +1468,7 @@
 	OutputLine(NULL, "……………なんで…………涙が……………。",
 		   NULL, " Pourquoi je pleure ?", Line_Normal);
 	ClearMessage();
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 
 	DrawScene( "black", 1000 );
 	PlayBGM( 0, "Birth_and_death", 56, 0 );

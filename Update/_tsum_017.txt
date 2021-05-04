@@ -597,7 +597,7 @@
 	DisableWindow();
 	ModDrawCharacter(0, 3, "sprite/me1a_warai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
 	PlayBGM( 1, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300346", 256, TRUE);
@@ -1380,7 +1380,7 @@
 	FadeOutBGM( 0, 400, FALSE );
 	DrawScene( "background/Sora", 400 );
 	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺は、いや、レナも。",
@@ -2173,6 +2173,8 @@
 		   NULL, "Elle n'aura qu'à dire par exemple qu'il y aura des travaux de faits dans l'école et que les enfants ne pourraient pas rester car c'est trop dangereux !", Line_Normal);
 	ClearMessage();
 
+	ModPlayBGM( 2, "semi", 56, 0, 1 );
+
 	DrawScene( "black", 400 );
 	ModDrawCharacter(0, 22, "sprite/tie_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "background/g3", 400 );
@@ -2494,6 +2496,7 @@
 	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
 	FadeFilm( 50, FALSE );
 	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 2, 300, FALSE, 1 );
 	DrawScene( "background/g3", 50 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2539,7 +2542,8 @@
 	ClearMessage();
 
 	DrawScene( "background/aka1", 400 );
-	PlayBGM( 1, "yabaisemi", 56, 0 );
+	ModPlayBGM( 1, "yabaisemi", 56, 0, 0 );
+	ModPlayBGM( 1, "semi_r", 56, 0, 1 );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2827,7 +2831,7 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 	ModDrawCharacter(1, 22, "sprite/tie_1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "background/g2", 1000 );
 

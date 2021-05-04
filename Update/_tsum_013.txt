@@ -3,14 +3,14 @@
 
 	SetColorOfMessage( TRUE, 0xff, 0xbb, 0xbb );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	PlayBGM( 1, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 1, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 	DrawSceneWithMask( "background/g1", "maskleft", 1, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	FadeOutBGM( 1, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModFadeOutBGM( 2, 300, FALSE, 0 );
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 	DrawSceneWithMask( "background/m_hi3", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "getting_mad", 56, 0 );
@@ -158,6 +158,9 @@
 		   NULL, "Si elle avait su qu'elle serait la prochaine victime dans la liste, qu'aurait-elle pensé...", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
+	ModPlayBGM( 1, "higurashi", 56, 0, 1 );
+
 	ModDrawCharacter(0, 9, "sprite/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "background/ke_ky2", "maskup", 1, 0, 300 );
 
@@ -220,7 +223,8 @@
 
 	ModDrawCharacter(0, 9, "sprite/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 2000 );
-	PlayBGM( 1, "kaze", 56, 0 );
+	ModPlayBGM( 1, "kaze", 56, 0, 0 );
+	ModPlayBGM( 0, "kaze", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　５年目の連続怪死事件が起こると確信していた三四さん本人が、その５年目の犠牲者になってしまうとは…。",
@@ -697,7 +701,8 @@
 	FadeFilm( 0, FALSE );
 
 	DrawScene( "background/aka2", 400 );
-	PlayBGM( 1, "yabaisemi", 56, 0 );
+	ModPlayBGM( 1, "yabaisemi", 56, 0, 0 );
+	ModPlayBGM( 1, "semi_r", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……これ以上を考えると、頭がぼぅっと霞んで来るのでやめる。",
@@ -1163,7 +1168,8 @@
 
 	FadeOutBGM( 0, 400, FALSE );
 	DrawScene( "background/aka2", 400 );
-	PlayBGM( 0, "msys08", 56, 0 );
+	ModPlayBGM( 0, "msys08", 56, 0, 0 );
+	ModPlayBGM( 0, "hig_sample_kyouki", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200658", 256, TRUE);
@@ -1354,7 +1360,8 @@
 		   NULL, "C'est pourquoi je m'étais souvenue des parasites et des insectes dans mon sang, et j'avais été prise de l'envie fébrile de vérifier si mes veines étaient bien vides.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "yabaisemi", 56, 0 );
+	ModPlayBGM( 0, "yabaisemi", 56, 0, 0 );
+	ModPlayBGM( 0, "semi_r", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、ツーーーと、手首に浮く血管にそってカミソリを入れて……。",
@@ -1409,7 +1416,8 @@
 
 	FadeOutBGM( 0, 3000, FALSE );
 	DrawScene( "white", 3000 );
-	PlayBGM( 1, "suzu", 56, 0 );
+	ModPlayBGM( 1, "suzu", 56, 0, 0 );
+	ModPlayBGM( 1, "Soul_scour", 56, 0, 1 );
 	DrawScene( "background/oyashirosama", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1417,8 +1425,8 @@
 		   NULL, "Et soudain... la salle de bains fut baignée de lumière.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
-	PlayBGM( 0, "Soul_scour", 56, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModPlayBGM( 0, "Soul_scour", 56, 0, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは……生まれて初めて経験する、神秘体験だった。",
 		   NULL, "C'était la toute première fois de ma vie que je faisais ce genre d'expérience divine.", GetGlobalFlag(GLinemodeSp));
@@ -1604,7 +1612,7 @@
 	ClearMessage();
 
 	DrawScene( "background/aka2", 400 );
-	PlayBGM( 1, "yabaisemi", 56, 0 );
+	ModPlayBGM( 1, "yabaisemi", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　早く早く！",
@@ -1641,11 +1649,12 @@
 	ClearMessage();
 
 	DrawScene( "white", 1000 );
-	FadeOutBGM( 1, 1000, FALSE );
+	ModFadeOutBGM( 1, 1000, FALSE, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	FadeOutBGM( 0, 1000, FALSE );
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
+	ModFadeOutBGM( 1, 1000, FALSE, 1 );
 	ModDrawCharacter(0, 9, "portrait/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "background/ke_ky2", 1000 );
 	PlayBGM( 0, "demo_48khz", 56, 0 );
@@ -2188,6 +2197,7 @@
 
 
 	PlayBGM( 1, "semi_r", 56, 0 );
+	ModPlayBGM( 2, "kaze", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは………富竹さんの死因だった。",
@@ -2256,6 +2266,7 @@
 	ClearMessage();
 
 	FadeOutBGM( 1, 400, FALSE );
+	ModFadeOutBGM( 2, 400, FALSE, 1 );
 	DrawScene( "background/aka2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

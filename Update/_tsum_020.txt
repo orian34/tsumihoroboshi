@@ -989,7 +989,7 @@
 		   NULL, "Leur apparence extérieure sera exactement la même... mais l'intérieur sera totalement différent. À l'intérieur, il y aura une présence supérieure, un être qui dépasse l'humain.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "yabaisemi", 56, 0 );
+	ModPlayBGM( 1, "yabaisemi", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いや、…………現れる。",
@@ -1002,6 +1002,8 @@
 	OutputLine(NULL, "現れてる。",
 		   NULL, " apparus sur Terre.", Line_Normal);
 	ClearMessage();
+
+	ModPlayBGM( 2, "semi_r", 56, 0, 1 );
 
 	DrawScene( "background/aka1", 400 );
 
@@ -1033,6 +1035,7 @@
 
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 2, 300, FALSE, 1 );
 	DrawSceneWithMask( "background/mo_r1_03", "maskup", 1, 0, 300 );
 	PlaySE( 0, "wa_023", 56, 64 );
 
@@ -1067,7 +1070,8 @@
 		   NULL, "La silhouette était petite. Ça ne pouvait déjà pas être un adulte.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 0, "yabaisemi", 56, 0 );
+	ModPlayBGM( 0, "yabaisemi", 56, 0, 0 );
+	ModPlayBGM( 0, "semi_r", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　全身にぞわぞわっとしたものが走り抜ける…！",
@@ -1240,7 +1244,8 @@
 	DrawScene( "scene/039a", 0 );
 	StartShakingOfWindow( 248, 30, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 30, 0, 2, 2*2, FALSE );
-	PlayBGM( 0, "msys08", 56, 0 );
+	ModPlayBGM( 0, "msys08", 56, 0, 0 );
+	ModPlayBGM( 0, "z2_hig1", 56, 0, 1 );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }

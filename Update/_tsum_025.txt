@@ -27,7 +27,7 @@
 
 	DrawScene( "background/sora", 1000 );
 	PlayBGM( 1, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -36,12 +36,12 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	FadeOutBGM( 1, 400, FALSE );
-	FadeOutBGM( 2, 400, FALSE );
+	ModFadeOutBGM( 1, 400, FALSE, 0 );
+	ModFadeOutBGM( 2, 400, FALSE, 0 );
 	ModSetLayerFilter(1, 256, "sunset");
 	ModDrawCharacter(1, 19, "sprite/kuma_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "background/g1_01", 400 );
-	PlayBGM( 1, "higurashi", 56, 0 );
+	ModPlayBGM( 1, "higurashi", 56, 0, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
 	SetValidityOfInput( TRUE );
@@ -1703,7 +1703,8 @@
 
 	FadeOutBGM( 0, 300, FALSE );
 	DrawSceneWithMask( "white", "maskc", 1, 0, 300 );
-	PlayBGM( 1, "higurashi", 56, 0 );
+	ModPlayBGM( 1, "higurashi", 56, 0, 0 );
+	ModPlayBGM( 1, "semi", 56, 0, 1 );
 	DrawScene( "background/gr1_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3906,7 +3907,8 @@
 	ClearMessage();
 
 	DrawScene( "background/Sora2", 400 );
-	PlayBGM( 0, "yabaisemi", 56, 0 );
+	ModPlayBGM( 0, "yabaisemi", 56, 0, 0 );
+	ModPlayBGM( 0, "semi_r", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700493", 256, TRUE);
@@ -4078,7 +4080,8 @@
 	ClearMessage();
 
 	PlaySE( 0, "s_page", 56, 64 );
-	PlayBGM( 0, "msys30", 56, 0 );
+	ModPlayBGM( 0, "msys30", 56, 0, 0 );
+	ModPlayBGM( 0, "iwakannnohatuga", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　このキッチンタイマーには先ほどの指定時刻、１９時を設定させていただきました。",
@@ -4333,7 +4336,8 @@
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_tataku", 56, 64 );
 	DrawSceneWithMask( "background/gk1_01", "maskright", 1, 0, 300 );
-	PlayBGM( 0, "msys23", 56, 0 );
+	ModPlayBGM( 0, "msys23", 56, 0, 0 );
+	ModPlayBGM( 0, "depressive paranoia", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101194_1", 256, TRUE);
@@ -4390,6 +4394,7 @@
 	ClearMessage();
 
 	DisableWindow();
+	ModPlayBGM( 2, "semi_r", 56, 0, 1 );
 	ModDrawCharacter(0, 2, "sprite/renasen2_ikakaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -4414,6 +4419,7 @@
 	DrawScene( "background/gk1_01", 100 );
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
+	ModFadeOutBGM( 2, 300, FALSE, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナは魅音の顔面をわざわざ殴る。",
@@ -4586,6 +4592,7 @@
 	ClearMessage();
 
 	DisableWindow();
+	ModPlayBGM( 1, "semi", 56, 0, 1 );
 	ModDrawCharacter(0, 2, "sprite/re2a_hig_okoru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -4771,7 +4778,7 @@
 	DisableWindow();
 	PlaySE( 0, "s_furu", 56, 64 );
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201578", 256, TRUE);
@@ -4815,6 +4822,8 @@
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 200 );
 	// (backup) SetValidityOfInput( TRUE );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	DrawSceneWithMask( "background/ryuuketu1", "maskaa", 1, 0, 300 );
 	PlaySE( 0, "thisikuki", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
@@ -5034,7 +5043,7 @@
 		   NULL, "Je sais comment tout va se terminer, mais je ne peux rien faire. Je pleure comme un idiot, sans pouvoir monter sur scène et faire bouger les choses...", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	ModDrawCharacter(0, 2, "sprite/re2a_hig_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "background/gk1_01", "maskup", 1, 0, 300 );
 
@@ -5080,7 +5089,7 @@
 		   NULL, "J'ouvris grand les bras, pour la prendre dans mes bras, comme elle avait tenté de le faire, lorsque nos rôles étaient inversés.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "birth_and_death", 56, 0 );
+	ModPlayBGM( 0, "birth_and_death", 56, 0, 0 );
 	ModDrawCharacter(0, 2, "portrait/re2a_nande_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "background/gk1_01", 400 );
 

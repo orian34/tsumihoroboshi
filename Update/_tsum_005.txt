@@ -1470,7 +1470,7 @@
 	ClearMessage();
 
 	FadeOutBGM( 1, 300, FALSE );
-	PlayBGM( 2, "Suzu", 56, 0 );
+	ModPlayBGM( 2, "Suzu", 56, 0, 0 );
 	PlayBGM( 0, "Soul_scour", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1550,7 +1550,7 @@
 		   NULL, " Nous étions obligés de repartir.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 2, 400, FALSE );
+	ModFadeOutBGM( 2, 400, FALSE, 0 );
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
