@@ -445,7 +445,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100738", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5066", 256, TRUE);
 	OutputLine(NULL, "「……いや、……そりゃあ信仰の厚い狂信的な連中にとっては、とても重要な意味があるんじゃないかなぁ……。」",
 		   NULL, "— Ben... J'en sais rien, moi, mais j'imagine que pour des fanatiques religieux, ça doit revêtir une grande importance ?", Line_Normal);
 	ClearMessage();
@@ -467,15 +467,15 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100739", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5067", 256, TRUE);
 	OutputLine(NULL, "「た、例えばほら、……梨花ちゃん！",
 		   NULL, "— Ouais, mais je veux dire, regarde, je sais pas moi, Rika, tiens !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100740", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5068", 256, TRUE);
 	OutputLine(NULL, "　梨花ちゃんって、何でもオヤシロさまの生まれ変わりとか言ってちやほやされてるらしいだろ？",
 		   NULL, "Les gens la chouchoutent et se prosternent devant elle, ils disent qu'elle est la réincarnation de la déesse Yashiro.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100741", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5069", 256, TRUE);
 	OutputLine(NULL, "　そういった取り巻きの老人たちの中にはきっと狂信的な一派が存在して……、」",
 		   NULL, "Je te dis, parmi eux, il y a une frange de fous furieux qui-", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -484,7 +484,7 @@
 	ModDrawCharacter(0, 3, "sprite/me1b_tokui_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300334", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion5012", 256, TRUE);
 	OutputLine(NULL, "「梨花ちゃんの取り巻きって言うと、公由のおじいちゃんとかのこと？",
 		   NULL, "— Aah, les gens comme le vieux Kimiyoshi ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -493,7 +493,7 @@
 	ModDrawCharacter(0, 3, "sprite/me1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300335", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion5013", 256, TRUE);
 	OutputLine(NULL, "まぁ…確かに信仰心は厚い方だと思うけど、狂信的ってのはどうかと思うねぇ。」",
 		   NULL, "Mouais... J'imagine qu'ils sont assez pieux, mais ce ne sont pas des fondamentalistes intégristes non plus...", Line_Normal);
 	ClearMessage();

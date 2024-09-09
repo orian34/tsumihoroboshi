@@ -1242,6 +1242,7 @@
 	ClearMessage();
 
 	DrawScene( "scene/039a", 0 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/mo_yg1", 0 );}
 	StartShakingOfWindow( 248, 30, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 30, 0, 2, 2*2, FALSE );
 	ModPlayBGM( 0, "msys08", 56, 0, 0 );
@@ -1261,6 +1262,9 @@
 	ClearMessage();
 
 	DrawScene( "scene/039b", 2000 );
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModSetLayerFilter(2, 256, "night");}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/ri1_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………それは、……梨花ちゃんだった。",
@@ -1857,27 +1861,27 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201122", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5098", 256, TRUE);
 	OutputLine(NULL, "「楽になれるって？！",
 		   NULL, "— J'irai mieux comment ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201123", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5099", 256, TRUE);
 	OutputLine(NULL, "　はッ！！",
 		   NULL, "Oh !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201124", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5100", 256, TRUE);
 	OutputLine(NULL, "　私にはわかってる。それでしょ？！",
 		   NULL, "Je SAIS ce que c'est !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201125", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5101", 256, TRUE);
 	OutputLine(NULL, "　富竹さんを殺した薬物の正体は！！",
 		   NULL, "C'est avec ça que Tomitake est mort, hein ? C'est cette drogue qui l'a tué !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170201126", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5102", 256, TRUE);
 	OutputLine(NULL, "　原始の力を持った寄生虫！！",
 		   NULL, "C'est le parasite que vous avez recréé, celui qui est aussi puissant qu'autrefois !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170201127", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5103", 256, TRUE);
 	OutputLine(NULL, "　うじ湧き病を再現させる恐ろしい注射！！」",
 		   NULL, "Celui qui donne des poussées d'asticots !", Line_Normal);
 	ClearMessage();
@@ -2185,26 +2189,26 @@
 	DrawScene( "background/moon", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500157", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5002", 256, TRUE);
 	OutputLine(NULL, "「私も昔は、小さな狂いが生じるたびに直そうと奔走したものだけど。",
 		   NULL, "— Tu sais, au début, il y a très, très longtemps maintenant, à chaque fois que je constatais une différence, je faisais des pieds et des mains pour réparer “l'anomalie”.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500158", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5003", 256, TRUE);
 	OutputLine(NULL, "……途中からね、疲れてきちゃったの。",
 		   NULL, "Et puis, à force, au bout d'un moment, j'en ai eu ras le cul.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500159", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5004", 256, TRUE);
 	OutputLine(NULL, "………“この”雛見沢にもう興味ない。",
 		   NULL, "Ce village de Hinamizawa ne m'intéresse plus,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500160", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5005", 256, TRUE);
 	OutputLine(NULL, "“次の”雛見沢を探しに行くことにするわ。",
 		   NULL, "c'est pourquoi j'ai décidé d'en chercher un nouveau. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500161", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5006", 256, TRUE);
 	OutputLine(NULL, "…でも、あなたには“この”雛見沢しかない。",
 		   NULL, "Mais pour toi, il n'y a que ce village-ci qui existe.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500162", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5007", 256, TRUE);
 	OutputLine(NULL, "だから、せいぜいがんばって生きなさいな。」",
 		   NULL, " Alors vis ta vie autant que tu peux. Je te souhaite bien du plaisir.", Line_Normal);
 	ClearMessage();

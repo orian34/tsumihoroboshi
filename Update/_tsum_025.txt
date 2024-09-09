@@ -2965,7 +2965,7 @@
 	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700441", 256, TRUE);
 	OutputLine(NULL, "…………そうだ、ジジィに聞いてみよう。",
 		   NULL, "... Je sais, on va demander au vieux.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps2/11/170700442", 540, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi5011", 256, TRUE);
 	OutputLine(NULL, " あぁすみません、署に連絡して鑑識のじいさまがいるか聞いてみてください。」",
 		   NULL, " Eh, appelez le central, demandez le médecin légiste.", Line_Normal);
 	ClearMessage();
@@ -3700,10 +3700,10 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700477", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi5012", 256, TRUE);
 	OutputLine(NULL, "「あぁ……あれだ。",
 		   NULL, "— Aaaah... Je sais pourquoi.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700478", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi5013", 256, TRUE);
 	OutputLine(NULL, "…俺さ、彼女との電話で、岐阜県警さんの検死で１日ズレがあったかもしれないですよ〜って言っちゃったことがあったんですよ。」",
 		   NULL, " Je lui ai dit, au téléphone. Tu sais, le premier rapport des gens de Gifu disaient que la personne était morte depuis plus de 24h. Je lui en ai parlé.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -5469,7 +5469,7 @@
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101246", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5087", 256, TRUE);
 	OutputLine(NULL, "「信じてねえのはレナの方だろうがああぁ！！！",
 		   NULL, "— C'est TOI qui ne nous fais pas confiance, espèce de conne !", GetGlobalFlag(GLinemodeSp));
 
@@ -5477,19 +5477,19 @@
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/170101247", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5088", 256, TRUE);
 	OutputLine(NULL, "　今は俺を信じろ、黙って俺を信じやがれ！！！",
 		   NULL, "J'te d'mande pas d'réfléchir, j'te d'mande de me croire, alors ferme ta gueule et crois-moi sur parole, putain, c'est quand même pas si compliqué ?!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/170101248", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5089", 256, TRUE);
 	OutputLine(NULL, "　それは絶対にレナのためになる。",
 		   NULL, "Je te jure que tout se passera bien pour toi, Rena !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/170101249", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5090", 256, TRUE);
 	OutputLine(NULL, "前回の惨劇の主人公がそうだと言ってるんだよ！！",
 		   NULL, "J'étais à ta place, c'était moi le héros de la tragédie, avant, je sais ce qu'il va se passer ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/170101250", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5091", 256, TRUE);
 	OutputLine(NULL, "　先代主人公の言うことを大人しく聞きやがれ！！」",
 		   NULL, "Alors écoute-moi et fais ce que j'te dis, et discute pas !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

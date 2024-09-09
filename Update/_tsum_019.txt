@@ -670,11 +670,11 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201053", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5096", 256, TRUE);
 	OutputLine(NULL, "「やつらの正体はオヤシロさま信仰の狂信者たちです。",
 		   NULL, "— Ceux qui sont derrière tout ça sont des fanatiques de la déesse Yashiro. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201054", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5097", 256, TRUE);
 	OutputLine(NULL, "やつらは明治以降、すっかり下火になってしまったオヤシロさま信仰を威光を取り戻し、太古の鬼ヶ淵村の時代のような、厳格な信仰を復活させようとしているんです。」",
 		   NULL, "Ils veulent remettre au goût du jour les vieilles traditions, celles qui se sont perdues depuis la révolution de l'ère Meiji. Ils veulent revenir aux lois dures qui étaient en place avant.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -957,7 +957,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700177", 256, TRUE);
-	OutputLine(NULL, "「……ご存知の通り、警察は強制捜査には礼状ってもんが必要です。",
+	OutputLine(NULL, "「……ご存知の通り、警察は強制捜査には令状ってもんが必要です。",
 		   NULL, "— ... Non, comme vous le savez, la Police a besoin d'un mandat de perquisition pour s'inviter chez les gens.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700178", 256, TRUE);
 	OutputLine(NULL, "そりゃあ、後付で取ることもできますがね？",
@@ -1058,23 +1058,23 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700187", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi5000", 256, TRUE);
 	OutputLine(NULL, "「……気の毒な最期でした。",
 		   NULL, "— ... Oui, et elle a eu une fin misérable, pauvre jeune femme.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700188", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi5001", 256, TRUE);
 	OutputLine(NULL, "岐阜の山中でドラム缶の中でこんがりでしてね。",
 		   NULL, "Nous l'avons retrouvée entièrement brûlée dans un vieux baril vide, dans les montagnes de Gifu.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700189", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi5002", 256, TRUE);
 	OutputLine(NULL, "気の毒なことです。",
 		   NULL, "C'est vraiment moche.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700190", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi5003", 256, TRUE);
 	OutputLine(NULL, "……………そうそう、そう言えば。",
 		   NULL, "... Ah tiens d'ailleurs,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700191", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi5004", 256, TRUE);
 	OutputLine(NULL, "…ちょいと彼女のことで変わった話がありましてね。」",
 		   NULL, "à propos de sa mort, il y a un détail bizarre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1144,19 +1144,19 @@
 	PlayBGM( 0, "z2_hig1", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700202", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi5005", 256, TRUE);
 	OutputLine(NULL, "「いえ、実はですね。",
 		   NULL, "— Eh bien, écoutez-voir ça :", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700203", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi5006", 256, TRUE);
 	OutputLine(NULL, "鷹野の遺体が見付かったのはその晩なわけですが、……岐阜県警さんの鑑識では、死後２４時間以上って出ちゃったらしいって噂があるんです。",
 		   NULL, "nous avons retrouvé le corps de Madame Takano cette nuit-là. Sauf que la personne qui a fait l'autopsie à Gifu nous a écrit dans son rapport qu'elle était morte depuis plus de 24h.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700204", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi5007", 256, TRUE);
 	OutputLine(NULL, "でもそれだと話がおかしい。",
 		   NULL, "Mais si c'est le cas, alors ce n'est pas normal ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700205", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi5008", 256, TRUE);
 	OutputLine(NULL, "あの祭りの前の晩には殺されてることになる。」",
 		   NULL, "Cela voudrait dire que Madame Takano a été tuée la veille de la fête !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1947,7 +1947,7 @@
 	ModDrawCharacter(2, 6, "sprite/si1a_odoroki_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s09/06/170600074", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion5000", 256, TRUE);
 	OutputLine(NULL, "「鬼婆の勅令ぇ？！",
 		   NULL, "— L'ordre vient de la vieille folle, carrément ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1956,16 +1956,16 @@
 	ModDrawCharacter(2, 6, "sprite/si1a_akuwarai_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s09/06/170600075", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion5001", 256, TRUE);
 	OutputLine(NULL, "　………レナさん何をやらかしたんだかぁ。",
 		   NULL, " ... Ouh là là, mais qu'est-ce qu'elle a glandé ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s09/06/170600076", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion5002", 256, TRUE);
 	OutputLine(NULL, "…あ〜あ、爪かなぁ？",
 		   NULL, " Aaah, elle va y laisser des ongles, hein ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s09/06/170600077", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion5003", 256, TRUE);
 	OutputLine(NULL, "　かわいそうに。",
 		   NULL, " Oooh, la pauvre, elle va avoir mal... C'est ballot, je l'aime bien.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s09/06/170600078", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion5004", 256, TRUE);
 	OutputLine(NULL, "くわばらくわばら。」",
 		   NULL, " Vite, vite, touchons du bois !", Line_Normal);
 	ClearMessage();

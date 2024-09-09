@@ -933,41 +933,41 @@
 	DrawSceneWithMask( "background/y_kawa3", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170200881", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5073", 256, TRUE);
 	OutputLine(NULL, "「太古の綿流しはね、実はハラワタ流しと書く、物騒なものでね。",
 		   NULL, "— Jadis, la purification du coton avait un autre sens. Ils n'écrivaient pas l'idéogramme du coton, ils mettaient celui des entrailles à la place.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170200882", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5074", 256, TRUE);
 	OutputLine(NULL, "錯乱した犠牲者の臓腑を食らうものだったの。",
 		   NULL, "Ils éviscéraient quelqu'un qui était devenu fou, et ils mangeaient ses organes internes. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170200883", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5075", 256, TRUE);
 	OutputLine(NULL, "でもこれも、必要なことだった。」",
 		   NULL, "C'est écœurant, mais c'était nécessaire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/170100637", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5055", 256, TRUE);
 	OutputLine(NULL, "「………感染して犠牲になった人を食らう…。",
 		   NULL, "— ... Mais pourquoi manger quelque chose d'infecté ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100638", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5056", 256, TRUE);
 	OutputLine(NULL, "………まさか、………ワクチンとか？」",
 		   NULL, " Oh ! C'est pas vrai... C'était un peu comme pour faire un vaccin, non ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200884", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5076", 256, TRUE);
 	OutputLine(NULL, "「あはは、圭一くんはやっぱり頭がいいね。",
 		   NULL, "— Ahahahaha, alors là, Keiichi, tu m'épates !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200885", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5077", 256, TRUE);
 	OutputLine(NULL, "うん、三四さんもそう読み解いてる。",
 		   NULL, " Oui, c'est ce que Miyo pensait aussi. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170200886", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5078", 256, TRUE);
 	OutputLine(NULL, "伝説では、犠牲者を生きたまま解体して食らったなんて物騒なことになっているけど、実際はそんな野蛮なものじゃなくて、もっともっと医学的に取り扱われていたらしいの。",
 		   NULL, "La légende dit qu'on les disséquait vivants et mangeait encore tout frais, c'est assez gore, mais dans les faits, ça devait être quelque chose de beaucoup plus modéré, presque clinique. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170200887", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5079", 256, TRUE);
 	OutputLine(NULL, "強過ぎる寄生虫のせいで死んだ犠牲者からワクチンを作り出し、同時に村人の抵抗力も高めていった。」",
 		   NULL, "Ils ont dérivé une sorte de vaccin à partir des tissus malades, pour l'inoculer aux villageois et renforcer leurs défenses naturelles.", Line_Normal);
 	ClearMessage();
@@ -1368,10 +1368,10 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100658", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5057", 256, TRUE);
 	OutputLine(NULL, "「だとすると、……そのスクラップ帖は、狂信的な連中にとっては充分危険な存在だな。",
 		   NULL, "— Dans ce cas, je peux tout à fait comprendre que les autres fanatiques religieux aient eu très peur de ces cahiers.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100659", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5058", 256, TRUE);
 	OutputLine(NULL, "例え特定できなくても、存在を証明してる時点で充分に危険だと思うぞ。」",
 		   NULL, " Je veux dire, si l'existence du parasite est prouvée, ensuite, l'identification, c'est une formalité.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1950,30 +1950,28 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200955", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5085", 256, TRUE);
 	OutputLine(NULL, "「圭一くん、４年目の撲殺事件を知ってるよね？",
 		   NULL, "— Keiichi, tu sais ce qu'il s'est passé la quatrième année ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200956", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5086", 256, TRUE);
 	OutputLine(NULL, "　沙都子ちゃんの叔母さんが殺された事件。",
 		   NULL, "La tante de Satoko a été frappée à mort.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", "<size=-3>", Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/i_170200957", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5087", 256, TRUE);
 	OutputLine(NULL, "あれは犯人は悟史くん以外に考えられないんだけど、……その後、犯人は麻薬中毒者だったということになった。",
 		   NULL, "Je n'ai pas assisté à la scène, mais je suis prête à mettre ma main à couper que c'est Satoshi qui a fait le coup. Sauf que quelques jours plus tard, la Police a découvert que c'était un toxicomane qui était le responsable. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200958", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5088", 256, TRUE);
 	OutputLine(NULL, "これをどう思う？」",
 		   NULL, "Qu'est-ce que tu en penses ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100689", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5064", 256, TRUE);
 	OutputLine(NULL, "「…………警察内部に狂信的な連中の手先が混じっていて……、",
-		   NULL, "— ... ... Tu crois qu'ils ont une taupe dans la Police et qu'elle a...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 5000 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "— ... ... Tu crois qu'ils ont une taupe dans la Police et qu'elle a...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi5065", 256, TRUE);
 	OutputLine(NULL, "犯人を捏造したってことか…？！」",
 		   NULL, " fabriqué un coupable ?", Line_Normal);
 	ClearMessage();
@@ -2037,15 +2035,15 @@
 	DrawSceneWithMask( "background/re_g1", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200965", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5089", 256, TRUE);
 	OutputLine(NULL, "「……御三家である魅ぃちゃんや梨花ちゃんが直接関係しているかはわからない。",
 		   NULL, "— .. Je ne peux pas affirmer que Mii est directement impliquée là-dedans, mais elle est quand même l'héritière d'un des clans fondateurs. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200966", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5090", 256, TRUE);
 	OutputLine(NULL, "ただ、狂信的な勢力が、御三家や、一番の有力家である園崎家を自由に動かせる中枢部に根付いているのは間違いない。",
 		   NULL, "Et rappelle-toi que les fanatiques peuvent utiliser à leur guise les ressources du clan Sonozaki. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200967", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5091", 256, TRUE);
 	OutputLine(NULL, "……狂信的な勢力が根付いたのか、御三家の中枢が狂信的なのかはわかりかねるけどね。」",
 		   NULL, "Alors maintenant, est-ce que les fanatiques sont venus s'incruster chez eux ou bien est-ce que les gens du clan Sonozaki sont des fanatiques, je ne sais pas, mais bon...", Line_Normal);
 	ClearMessage();
@@ -2237,19 +2235,19 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200994", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5092", 256, TRUE);
 	OutputLine(NULL, "「多分、そんなにすぐじゃないはずなの。",
 		   NULL, "— Ne t'en fais pas, ce ne sera pas pour tout de suite.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200995", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5093", 256, TRUE);
 	OutputLine(NULL, "さっきも言ったとおり、彼らが狂信的であればあるほど、宗教的なセレモニーを必要とするはず。",
 		   NULL, "Je te l'ai dit tout à l'heure, ce sera un événement pour eux, il leur faut une date symbolique, mais aussi décider de la cérémonie à suivre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200996", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5094", 256, TRUE);
 	OutputLine(NULL, "そういうセレモニーは村を挙げて行なうものだもの。",
 		   NULL, "Ils voudront sûrement avoir l'attention du village entier. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200997", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5095", 256, TRUE);
 	OutputLine(NULL, "綿流し以上のイベントは今の雛見沢には存在しない。」",
 		   NULL, "À part lors de la purification du coton, je ne vois pas quand ils pourraient le faire, il n'y a rien d'autre à Hinamizawa.", Line_Normal);
 	ClearMessage();

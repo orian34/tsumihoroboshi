@@ -179,25 +179,19 @@
 	DrawScene( "background/moon", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201341", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5130", 256, TRUE);
 	OutputLine(NULL, "「…………もうね、…だめなの。",
 		   NULL, "— ... Il est trop tard pour moi, Keiichi.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201342", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5131", 256, TRUE);
 	OutputLine(NULL, "………今のこの瞬間も、",
-		   NULL, " Là, en ce moment,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1900 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " Là, en ce moment,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "org/rena5132", 256, TRUE);
 	OutputLine(NULL, "…私の全身の中で、",
-		   NULL, " j'ai des asticots", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1900 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " j'ai des asticots", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "org/rena5133", 256, TRUE);
 	OutputLine(NULL, "うじ虫が蠢いてて、",
-		   NULL, " partout dans le corps.", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 2500 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " partout dans le corps.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "org/rena5134", 256, TRUE);
 	OutputLine(NULL, "…痒くて痒くて、……溢れ出しそうなの…。」",
 		   NULL, " J'ai envie de me gratter partout... pour les faire sortir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

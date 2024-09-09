@@ -617,7 +617,7 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　それから父は、罪滅ぼしのようにリナとの馴れ初めを騙り始めた。",
+	OutputLine(NULL, "　それから父は、罪滅ぼしのようにリナとの馴れ初めを語り始めた。",
 		   NULL, "Alors, comme s'il avait voulu vider son sac, il me raconta comment il avait rencontré Rina.", Line_Normal);
 	ClearMessage();
 
@@ -2236,7 +2236,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "……今度から魅ぃと麻雀をやる時は、終わった後にも牌の数を調べた方がいいと思いますです。",
+	ModPlayVoiceLS(4, 5, "org/rika5000", 256, TRUE);
+	OutputLine(NULL, "「……今度から魅ぃと麻雀をやる時は、終わった後にも牌の数を調べた方がいいと思いますです。」",
 		   NULL, "— ... Je propose de recompter les pièces avant et après chaque partie de mah jong avec toi, Mion...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -2371,15 +2372,15 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100303", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5024", 256, TRUE);
 	OutputLine(NULL, "「へーー、そんな噂あるのかよ。",
 		   NULL, "— C'est quoi l'histoire, au juste ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100304", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5025", 256, TRUE);
 	OutputLine(NULL, "……確か、バラバラ殺人があって、主犯が未だ逃走中。",
 		   NULL, "J'ai vaguement entendu un truc, ce mec s'est fait découper en morceau, c'est ça ? Et l'un des mecs qui a fait ça n'a jamais été retrouvé ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100305", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5026", 256, TRUE);
 	OutputLine(NULL, "そいつの隠した腕一本が未だ見付からないとか言うんだろ？」",
 		   NULL, "La police a jamais pu reprendre le morceau qu'il avait caché ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2388,7 +2389,7 @@
 	ModDrawCharacter(2, 5, "sprite/ri1_komaru_a1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500041", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5001", 256, TRUE);
 	OutputLine(NULL, "「……その腕を探して、バラバラにされた監督さんが、幽霊になって彷徨っているという噂があるのです。」",
 		   NULL, "— ... Et comme je viens de le dire, apparemment, son âme erre encore dans la décharge, à la recherche du bras qu'il lui manque.", Line_Normal);
 	ClearMessage();
@@ -2549,10 +2550,10 @@
 	PlayBGM( 1, "semi_r", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300198", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion5006", 256, TRUE);
 	OutputLine(NULL, "「じゃあ決まり！",
 		   NULL, "— Bon, eh bien alors, nous sommes d'accord ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300199", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion5007", 256, TRUE);
 	OutputLine(NULL, "　今日はゴミ山探検にしよう！",
 		   NULL, " On va à la décharge, aujourd'hui !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2561,19 +2562,19 @@
 	ModDrawCharacter(1, 3, "sprite/me1a_wink_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300200", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion5008", 256, TRUE);
 	OutputLine(NULL, "幽霊を見つけれたら優勝！",
 		   NULL, "Celui qui trouvera le fantôme aura gagné !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/170300201", 540, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion5009", 256, TRUE);
 	OutputLine(NULL, "　次点は隠された右腕。",
 		   NULL, "Si personne ne voit le fantôme, alors il faudra trouver le bras manquant pour gagner !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300202", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion5010", 256, TRUE);
 	OutputLine(NULL, "その次は、えぇっと、じゃあレナが気に入りそうな何かだね！",
 		   NULL, "Si aucun des deux n'est disponible, eh bien, il faudra trouver quelque chose qui plaira à Rena. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300203", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion5011", 256, TRUE);
 	OutputLine(NULL, "　レナに見せてシロクロを付けてもらうってことでどうよ！」",
 		   NULL, "On lui montrera pour connaître les résultats !", Line_Normal);
 	ClearMessage();

@@ -4,6 +4,7 @@
 	char sprite_iri_def2;
 	char sprite_iri_majime;
 	char sprite_iri_majime2;
+	char sprite_iri_warai;
 
 	int i;
 	i = GetRandomNumber( 3 );
@@ -13,6 +14,7 @@
 		sprite_iri_def2 = "sprite/iri1_def2_";
 		sprite_iri_majime = "sprite/iri1_majime_";
 		sprite_iri_majime2 = "sprite/iri1_majime2_";
+		sprite_iri_warai = "sprite/iri1_warai_";
 	}
 
 	if (i == 1) {
@@ -20,6 +22,7 @@
 		sprite_iri_def2 = "sprite/iri2_def2_";
 		sprite_iri_majime = "sprite/iri2_majime_";
 		sprite_iri_majime2 = "sprite/iri2_majime2_";
+		sprite_iri_warai = "sprite/iri2_warai_";
 	}
 
 	if (i == 2) {
@@ -27,6 +30,7 @@
 		sprite_iri_def2 = "sprite/iri3_def2_";
 		sprite_iri_majime = "sprite/iri3_majime_";
 		sprite_iri_majime2 = "sprite/iri3_majime2_";
+		sprite_iri_warai = "sprite/iri3_warai_";
 	}
 
 	DisableWindow();
@@ -175,6 +179,8 @@
 	ClearMessage();
 
 	DrawScene( "scene/303c", 1000 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 4, "sprite/sa6_akireru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/res1", 1000 );}
 	ModPlayBGM( 0, "4", 56, 0, 0 );
 	ModPlayBGM( 0, "3", 56, 0, 1 );
 
@@ -184,11 +190,17 @@
 		   NULL, "— Las ! Je fus prise d'une juste intuition lorsque le destin dressa cet uniforme sur mon chemin. Bien m'en prit de m'y préparer comme il se devait...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 5, "sprite/ri6_warai_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500004", 256, TRUE);
 	OutputLine(NULL, "「……沙都子のメイドさんは、ある意味、命に関わりますです。」",
 		   NULL, "— ... Il faut dire aussi que la vision d'une Satoko en soubrette, ça envoie du lourd.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 2, "sprite/re2a_kaii_a1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200090", 256, TRUE);
@@ -202,7 +214,11 @@
 		   NULL, " Je te ramène à la m--", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 50 );}
 	PlaySE( 0, "s_Kyupiin", 56, 64 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re2a_kaii_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 10, sprite_iri_majime, "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/res1", 100 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s09/10/171000005", 256, TRUE);
@@ -212,6 +228,9 @@
 	OutputLine(NULL, "　お持ち帰るのはこの私、入江京介です！！」",
 		   NULL, " C'est moi qui la ramènerai à la maison, moi, Kyôsuke Irie, et personne d'autre !", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re2b_kaii_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200093", 256, TRUE);
@@ -264,6 +283,8 @@
 	// (backup) SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_Kyupiin", 56, 64 );
 	DrawScene( "scene/303c", 400 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re2b_kaii_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/res1", 400 );}
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -280,12 +301,17 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "おお？！",
 		   NULL, "Eh, mais !?", Line_WaitForInput);
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacterWithFiltering(1, 10, sprite_iri_majime, "0", "maskup", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );}
 	PlaySE( 0, "wa_011", 56, 64 );
 	OutputLine(NULL, "　だが監督もむっくりとゾンビみたいに起き上がる。",
 		   NULL, " Incroyable, le Chef se relève ?", Line_WaitForInput);
 	OutputLine(NULL, "…レナの超高速弾を全弾受けたのに、立ち上がれるのかぁあぁ！！",
 		   NULL, " Mais c'est un zombie, ma parole, c'est à croire que les coups supersoniques de Rena n'ont aucun effet sur lui !", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 10, sprite_iri_warai, "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s09/10/171000007", 256, TRUE);
@@ -314,6 +340,9 @@
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, FALSE );
 	DrawScene( "scene/303c", 200 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 10, sprite_iri_warai, "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re2b_kaii_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/res1", 200 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s09/10/171000009", 256, TRUE);
@@ -327,14 +356,19 @@
 		   NULL, " Ohpff !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {FadeBustshotWithFiltering( 1, "maskdown", 7, FALSE, 0, 0, 300, TRUE );}
 	PlaySE( 0, "wa_011", 56, 64 );
 	ModPlayBGM( 1, "semi", 56, 0, 1 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacterWithFiltering(1, 10, sprite_iri_warai, "0", "maskup", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s09/10/171000010", 256, TRUE);
 	OutputLine(NULL, "　無駄無駄無駄です！！",
 		   NULL, "Aucun, aucun, aucun, aucun !", Line_WaitForInput);
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 10, sprite_iri_majime2, "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );}
 	PlaySE( 0, "s_Kyupiin", 56, 64 );
 	Wait( 300 );
 	PlaySE( 0, "s_furu", 56, 64 );
@@ -370,6 +404,8 @@
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, FALSE );
 	DrawScene( "scene/303c", 200 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re2b_warai_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/res1", 400 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s09/10/171000012", 256, TRUE);
@@ -960,10 +996,10 @@
 	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s09/04/170400012", 256, TRUE);
+	ModPlayVoiceLS(4, 4, "org/satoko5000", 256, TRUE);
 	OutputLine(NULL, "「そう言えば、圭一さんとレナさんの勝負は、預かり勝負でございましたものねぇ。",
 		   NULL, "— Mais j'y pense, nos chers amis devaient se départager ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "ps2/04/170400013", 540, TRUE);
+	ModPlayVoiceLS(4, 4, "org/satoko5001", 256, TRUE);
 	OutputLine(NULL, "少し外野が混じるとは言え、ここで優勝決勝戦をされるのも面白いですものねぇ。」",
 		   NULL, " Il n'est pas habituel de mêler la plèbe à nos activités, mais cela pourrait s'avérer très intéressant !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1759,6 +1795,8 @@
 	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	SetSpeedOfMessage( FALSE, 0 );
 
 	DisableWindow();
 	PlaySE( 0, "s_Kyupiin", 56, 64 );

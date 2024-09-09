@@ -1010,10 +1010,10 @@
 	ModDrawCharacter(0, 2, "sprite/re2b_okoru_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201202", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5104", 256, TRUE);
 	OutputLine(NULL, "「そんなのは決まってるでしょ。",
 		   NULL, "— C'est pourtant évident !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201203", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5105", 256, TRUE);
 	OutputLine(NULL, "三四さんの暴いた致命的な事実は狂信者たちの偉大な計画の実現、」",
 		   NULL, " La chose la plus cruciale que Miyo à découvert, c'est que les membres de la secte voulaient réal-", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1150,19 +1150,19 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100874", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5070", 256, TRUE);
 	OutputLine(NULL, "「………俺は、レナの目を覚ましに来たんだ。",
 		   NULL, "— ... Rena, je suis venu pour t'ouvrir les yeux.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100875", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5071", 256, TRUE);
 	OutputLine(NULL, "お前は鷹野さんのスクラップ帖のせいで、とんでもない狂った夢に取り憑かれてる。",
 		   NULL, "Tu es perdue dans un grand rêve, ou plutôt un cauchemar, à cause des cahiers de Madame Takano.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100876", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5072", 256, TRUE);
 	OutputLine(NULL, "……最初の内は面白ぇ話だと思ってたが、そろそろ洒落にならないと思い始めた。",
 		   NULL, "Tu sais, au début, je trouvais son histoire vraiment intéressante, mais là, ça ne me fait franchement plus rire. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100877", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5073", 256, TRUE);
 	OutputLine(NULL, "…………お前は今、ちょっとした病気なんだよ！」",
 		   NULL, "... Tu es malade, Rena. Malade !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2328,13 +2328,13 @@
 	DrawScene( "background/aka2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201293", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5109", 256, TRUE);
 	OutputLine(NULL, "「児童連続襲撃事件。",
 		   NULL, "— Violences sur mineurs de moins de 15 ans, et pas qu'une seule fois, en plus !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201294", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5110", 256, TRUE);
 	OutputLine(NULL, "すごいすごい、雛見沢村連続怪死事件に負けないくらいインパクトあるよ？",
 		   NULL, " Eh ben dis-donc, mais t'es pas un petit joueur ! Oh, bien sûr, tu fais pâle figure comparé aux meurtres en série ici !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201295", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5111", 256, TRUE);
 	OutputLine(NULL, "　あははは、あっはっはっは！！」",
 		   NULL, " Ahahaha, hahahahaha !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2346,34 +2346,34 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201296", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5112", 256, TRUE);
 	OutputLine(NULL, "「何がどう違うの？",
 		   NULL, "— C'est pas quoi ? Il n'y a rien de compliqué, pourtant.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201297", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5113", 256, TRUE);
 	OutputLine(NULL, "　数週間の間に、ひと気のないところを歩く小さな子どもばかりを狙って、通り掛かりにモデルガンで撃ち付ける恐ろしい事件だった。",
 		   NULL, " Pendant plusieurs semaines, tu as attaqué des enfants seuls sur le chemin de l'école, avec des pistolets à air comprimé. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170201298", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5114", 256, TRUE);
 	OutputLine(NULL, "市内一帯は一時期騒然。ＰＴＡが交差点ごとに立ち、集団下校にもなったんだってねぇ？",
 		   NULL, "Les gens étaient alertés, les parents d'élèves se postaient à chaque intersection pour surveiller le maximum de rues, les enfants devaient rentrer en groupes ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170201299", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5115", 256, TRUE);
 	OutputLine(NULL, "　目に当って大怪我した子もいたんでしょ？",
 		   NULL, "Et puis, tu as même failli crever un œil à l'une des gamines, non ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201300", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5116", 256, TRUE);
 	OutputLine(NULL, "　幸い、後遺症にはならなかったそうだけど。",
 		   NULL, "Heureusement qu'elle n'en a pas gardé de séquelles.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201301", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5117", 256, TRUE);
 	OutputLine(NULL, "あははははは！",
 		   NULL, "Ahahahahaha !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170201302", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5118", 256, TRUE);
 	OutputLine(NULL, "　モデルガンなんて武器を持ちながら、それでも小さな子しか狙わない、嫌らしさ。",
 		   NULL, "Quand je pense que tu te promenais avec des armes à air comprimé, et que malgré ça tu ne visais que des petits enfants incapables de se défendre ! Non mais tu te rends compte comme tu es écœurant ? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201303", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5119", 256, TRUE);
 	OutputLine(NULL, "そんなことして何が楽しかったの？",
 		   NULL, "Qu'est-ce que tu en retirais, hein ?", Line_Normal);
 	ClearMessage();

@@ -1551,16 +1551,16 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100989", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5074", 256, TRUE);
 	OutputLine(NULL, "「魅音に直に、ダム現場で事件がなかったかって聞いたよな。",
 		   NULL, "— Je t'ai demandé directement, à TOI, ce qu'il s'était passé au barrage.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100990", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5075", 256, TRUE);
 	OutputLine(NULL, "…魅音はないって言ったじゃないか！！！",
 		   NULL, " Et tu m'as répondu quoi ? Qu'il ne s'était RIEN passé !!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100991", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5076", 256, TRUE);
 	OutputLine(NULL, "　バラバラ殺人があったのによ！！！",
 		   NULL, " Alors qu'il y a eu un meurtre avec démembrement !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100992", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5077", 256, TRUE);
 	OutputLine(NULL, "　嘘つき野郎ッ！！！」",
 		   NULL, " Sale menteuse de merde !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3523,36 +3523,36 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101038", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5078", 256, TRUE);
 	OutputLine(NULL, "「………この世界はもう狂っちまった。",
 		   NULL, "— ... Ce monde est devenu fou,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101039", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5079", 256, TRUE);
 	OutputLine(NULL, "でも、だからといって諦めていいなんてことはねえんだよな。",
 		   NULL, "mais c'est pas une raison pour l'abandonner, n'est-ce pas ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101040", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5080", 256, TRUE);
 	OutputLine(NULL, "……諦めるってことは信じないってことだ。",
 		   NULL, "Parce que si on abandonne, ça veut dire que l'on n'a pas confiance.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101041", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5081", 256, TRUE);
 	OutputLine(NULL, "俺はレナを、仲間の絆を信じるぜ。",
 		   NULL, "Et moi, je crois en Rena, je crois en notre amitié !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101042", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5082", 256, TRUE);
 	OutputLine(NULL, "……だから、まだ間に合うんだ。",
 		   NULL, "Je suis sûr qu'il n'est pas trop tard. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101043", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5083", 256, TRUE);
 	OutputLine(NULL, "惨劇は回避できる。",
 		   NULL, "La tragédie peut être évitée.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101044", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5084", 256, TRUE);
 	OutputLine(NULL, "運命には抗える。",
 		   NULL, " Nous pouvons encore nous rebeller contre le destin.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101045", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5085", 256, TRUE);
 	OutputLine(NULL, "俺たちは足掻く。",
 		   NULL, " Nous démener comme des diables,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101046", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5086", 256, TRUE);
 	OutputLine(NULL, "そして掴めるんだ、その先の未来ってやつをなッ！！」",
 		   NULL, " et saisir notre chance, pour nous hisser dans un futur meilleur !", Line_Normal);
 	ClearMessage();
@@ -3575,10 +3575,10 @@
 	ModDrawCharacter(2, 5, "sprite/ri1_komaru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500213", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5008", 256, TRUE);
 	OutputLine(NULL, "「……圭一。",
 		   NULL, "— ... Keiichi.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500214", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5009", 256, TRUE);
 	OutputLine(NULL, "…………私も、…諦めない。",
 		   NULL, " ... Moi non plus, je n'abandonnerai pas.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3587,41 +3587,41 @@
 	ModDrawCharacter(2, 5, "sprite/ri1_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500215", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5010", 256, TRUE);
 	OutputLine(NULL, "……この世界から希望を失ってたまるものか。",
 		   NULL, "Je ne peux pas accepter de perdre espoir dans ce monde-ci aussi.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500216", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5011", 256, TRUE);
 	OutputLine(NULL, "…私は数え切れない失敗に疲れ果ててた。",
 		   NULL, " Je suis fatiguée de perdre espoir, je l'ai vécu bien trop souvent.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500217", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5012", 256, TRUE);
 	OutputLine(NULL, "だから世界が狂い出すことに諦めを感じるようになってた。",
 		   NULL, " À chaque fois qu'un monde devenait fou, j'ai pris l'habitude d'abandonner. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500218", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5013", 256, TRUE);
 	OutputLine(NULL, "だから、………もうレナがどうなろうと知ったことではないと、昨夜思った。",
 		   NULL, "C'est pourquoi hier soir, je me suis dit qu'après tout, je me contrefoutais du sort de Rena.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500219", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5014", 256, TRUE);
 	OutputLine(NULL, "でも、……それは間違いだった。",
 		   NULL, "Mais j'avais tort.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500220", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5015", 256, TRUE);
 	OutputLine(NULL, "……戦おうとする意思がこんなにも美しく神々しくて、……そして運命すら捻じ曲げかねない、奇跡が起こせることを知った。",
 		   NULL, "La volonté de se battre est noble, pure, magnifique. Et parfois, elle peut faire des miracles et modifier le destin. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500221", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5016", 256, TRUE);
 	OutputLine(NULL, "だから私はあなたと共に戦おう。",
 		   NULL, "C'est pourquoi je veux me battre avec toi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500222", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5017", 256, TRUE);
 	OutputLine(NULL, "もう一度戦おう、",
 		   NULL, "Je veux me battre, encore une fois, comme avant.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500223", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5018", 256, TRUE);
 	OutputLine(NULL, "何度でも戦おう。",
 		   NULL, "Autant de fois que nécessaire. Jusqu'à ce qu'enfin, j'arrive dans un nouveau futur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500224", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5019", 256, TRUE);
 	OutputLine(NULL, "その先の未来に至れるまで、何度でも。」",
 		   NULL, "Et peu importe le nombre d'essais que cela prendra.", Line_Normal);
 	ClearMessage();
